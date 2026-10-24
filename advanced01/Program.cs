@@ -74,6 +74,11 @@
             #endregion
 
 
+            #region Q6: What is a generic interface? Write IRepository<T>. 
+
+            #endregion
+
+
 
 
         }
