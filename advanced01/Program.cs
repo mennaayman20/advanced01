@@ -9,6 +9,26 @@
             a = b;
             b = temp;
         }
+
+        //FindMax method
+        public static T FindMax<T>(T[] array) where T : IComparable<T>
+        {
+            if (array == null || array.Length == 0)
+            {
+                throw new ArgumentException("Array cannot be null or empty.");
+            }
+            T max = array[0];
+            foreach (T item in array)
+            {
+                if (item.CompareTo(max) > 0)
+                {
+                    max = item;
+                }
+            }
+            return max;
+        }
+        
+        
         static void Main(string[] args)
         {
             #region Q1: What is a generic class? Why use generics?
@@ -43,9 +63,18 @@
             Swap(ref x, ref y);
             Console.WriteLine(x);
             Console.WriteLine(y);
+            #endregion
 
+            #region Q5: Write a generic method FindMax<T> that finds maximum value
+
+            int[] numbers = { 10, 20, 30, 40, 50 };
+            int max = FindMax(numbers);
+            Console.WriteLine(max);
 
             #endregion
+
+
+
 
         }
     }
