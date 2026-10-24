@@ -2,6 +2,13 @@
 {
     internal class Program
     {
+        //swap method
+        public static void Swap<T>(ref T a, ref T b)
+        {
+            T temp = a;
+            a = b;
+            b = temp;
+        }
         static void Main(string[] args)
         {
             #region Q1: What is a generic class? Why use generics?
@@ -28,6 +35,18 @@
             Console.WriteLine(student.Key);
             Console.WriteLine(student.Value);
             #endregion
+
+            #region Q4: What is a generic method? Write Swap<T> method.
+            int x = 10;
+            int y = 20;
+
+            Swap(ref x, ref y);
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+
+
+            #endregion
+
         }
     }
 }
