@@ -27,8 +27,12 @@
             }
             return max;
         }
-        
-        
+
+        //'default' keyword
+        public T GetDefaultValue<T>()
+        {
+            return default(T); 
+        }
         static void Main(string[] args)
         {
             #region Q1: What is a generic class? Why use generics?
