@@ -82,7 +82,35 @@
 
             #endregion
 
+            #region Q15: What is covariance? Explain the 'out' keyword
+            // Covariance allows you to use a more derived type than originally specified.
+            // It is used in generic interfaces and delegates to enable implicit conversion of types.
+            // The 'out' keyword is used to specify that a type parameter is covariant, meaning it can be substituted with a more derived type.
+            #endregion
 
+            #region Q16: What is contravariance? Explain the 'in' keyword.
+            // Contravariance allows you to use a less derived type than originally specified.
+            // It is used in generic interfaces and delegates to enable implicit conversion of types.
+            // The 'in' keyword is used to specify that a type parameter is contravariant, meaning it can be substituted with a less derived type.
+            #endregion
+
+            #region Q17: What is the difference between covariance and contravariance?
+
+            // Covariance allows you to use a more derived type than originally specified, while contravariance allows you to use a less derived type than originally specified.
+
+
+            #endregion
+
+            #region Q18: How do static members work in generic types?
+            // Static members in generic types are shared across all instances of the generic type, regardless of the type parameter used.
+            #endregion
+
+            #region Q19: How can you inherit from a generic class?
+            // You can inherit from a generic class by specifying the type parameter in the derived class.
+            // For example, if you have a generic class Base<T>, you can create a derived class Derived
+            // : Base<int> to inherit from it with a specific type parameter.
+
+            #endregion
 
 
 
